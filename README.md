@@ -29,3 +29,39 @@ c = 11
 m = 2^48 (2 to the power of 48`)
 Task 5.
 Write a public static <T> Stream<T> zip(Stream<T> first, Stream<T> second) method that "mixes" elements from streams first and second, stopping when one of the streams runs out of elements.
+
+  
+  **********************************************************************************************************************************************
+  **********************************************************************************************************************************************
+  **********************************************************************************************************************************************
+  
+  
+  Aufgabe 1.
+Die Methode nimmt eine Liste von Namen als Eingabe. Es muss eine Zeichenkette der Form 1. Iwan, 3. Peter... mit nur den Namen, die unter einem ungeraden Index stehen (1, 3, etc.)
+
+Aufgabe 2.
+Die Methode nimmt eine Liste von Zeichenketten als Eingabe (man kann die Liste aus Aufgabe 1 nehmen). Gibt eine Liste dieser Zeichenketten in Großbuchstaben zurück, absteigend sortiert (von Z bis A).
+
+Aufgabe 3
+Gegeben ist ein Array:
+
+["1, 2, 0", "4, 5"]
+
+Holen Sie alle Zahlen aus dem Array und geben Sie sie sortiert und durch Komma getrennt aus, z.B.:
+
+"0, 1, 2, 4, 5"
+
+Aufgabe 4
+Erzeugen Sie mit Stream.iterate einen unendlichen Strom von Zufallszahlen, aber ohne Math.random() zu verwenden.
+
+Implementiere deinen linear kongruenten Generator. Beginne dazu mit x[0] = seed und berechne dann jedes nachfolgende Element mit einer Formel wie x[n + 1] = 1 (a x[n] + c) % m für die richtigen Werte von a, c und m.
+
+Sie müssen eine Methode implementieren, die die Parameter a, c und m als Eingabe erhält und einen Stream<Long> zurückgibt.
+
+Verwenden Sie die folgenden Daten für den Test:
+
+a = 25214903917
+c = 11
+m = 2^48 (2 hoch 48`)
+Aufgabe 5.
+Schreibe eine öffentliche statische <T> Stream<T> zip(Stream<T> first, Stream<T> second) Methode, die Elemente aus den Streams first und second "mischt" und anhält, wenn einer der Streams keine Elemente mehr hat.
